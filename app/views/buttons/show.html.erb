@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @button.colour %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @button.description %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @button.size %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @button.price %>
+</p>
+
+<%= link_to 'Edit', edit_button_path(@button) %> |
+<%= link_to 'Back', buttons_path %>
