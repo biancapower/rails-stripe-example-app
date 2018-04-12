@@ -1,11 +1,11 @@
 class ChargesController < ApplicationController
     def new
-      @amount = 850
+      @amount = @button.price
     end
     
     def create
       # Amount in cents
-      @amount = 850
+      @amount = @button.price
     
       customer = Stripe::Customer.create(
         :email => params[:stripeEmail],
